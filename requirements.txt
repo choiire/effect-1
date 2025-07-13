@@ -1,3 +1,13 @@
 soundfile
 numpy
+webrtcvad-wheels
+noisereduce
+pedalboard
+numpy
 scipy
+vmdpy
+logmmse
+sounddevice
+webrtcvad-wheels
+noisereduce
+pedalboard

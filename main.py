@@ -37,13 +37,13 @@ def main():
     
     # DRC parameters
     drc_group = parser.add_argument_group("Dynamic Range Compression (DRC)")
-    drc_group.add_argument("--threshold", type=float, default=-20.0,
-                          help="Compression threshold in dB")
-    drc_group.add_argument("--ratio", type=float, default=4.0,
-                          help="Compression ratio (e.g., 4.0 for 4:1)")
-    drc_group.add_argument("--attack", type=float, default=10.0,
-                          help="Attack time in milliseconds")
-    drc_group.add_argument("--release", type=float, default=100.0,
+    drc_group.add_argument("--threshold", type=float, default=-25.0,
+                          help="Compression threshold in dB (lower = more compression)")
+    drc_group.add_argument("--ratio", type=float, default=6.0,
+                          help="Compression ratio (e.g., 6.0 for 6:1, higher = more compression)")
+    drc_group.add_argument("--attack", type=float, default=5.0,
+                          help="Attack time in milliseconds (lower = faster response)")
+    drc_group.add_argument("--release", type=float, default=75.0,
                           help="Release time in milliseconds")
     
     # Processing parameters
